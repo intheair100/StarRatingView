@@ -12,6 +12,8 @@
 		6DF49E391D4DEF6D00E8612A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E381D4DEF6D00E8612A /* Assets.xcassets */; };
 		6DF49E3C1D4DEF6D00E8612A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E3A1D4DEF6D00E8612A /* LaunchScreen.storyboard */; };
 		6DF49E4A1D4DF2A000E8612A /* CTStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E491D4DF2A000E8612A /* CTStarRatingView.m */; settings = {ASSET_TAGS = (); }; };
+		6DF49E4E1D4DF34D00E8612A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E4C1D4DF34C00E8612A /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6DF49E4F1D4DF34D00E8612A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E4D1D4DF34D00E8612A /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		6DF49E3D1D4DEF6D00E8612A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DF49E481D4DF2A000E8612A /* CTStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTStarRatingView.h; sourceTree = "<group>"; };
 		6DF49E491D4DF2A000E8612A /* CTStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTStarRatingView.m; sourceTree = "<group>"; };
+		6DF49E4B1D4DF34C00E8612A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DF49E4C1D4DF34C00E8612A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DF49E4D1D4DF34D00E8612A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 				6DF49E361D4DEF6D00E8612A /* AppDelegate.m */,
 				6DF49E481D4DF2A000E8612A /* CTStarRatingView.h */,
 				6DF49E491D4DF2A000E8612A /* CTStarRatingView.m */,
+				6DF49E4B1D4DF34C00E8612A /* ViewController.h */,
+				6DF49E4C1D4DF34C00E8612A /* ViewController.m */,
+				6DF49E4D1D4DF34D00E8612A /* ViewController.xib */,
 				6DF49E381D4DEF6D00E8612A /* Assets.xcassets */,
 				6DF49E3A1D4DEF6D00E8612A /* LaunchScreen.storyboard */,
 				6DF49E3D1D4DEF6D00E8612A /* Info.plist */,
@@ -134,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF49E391D4DEF6D00E8612A /* Assets.xcassets in Resources */,
+				6DF49E4F1D4DF34D00E8612A /* ViewController.xib in Resources */,
 				6DF49E3C1D4DEF6D00E8612A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +156,7 @@
 			files = (
 				6DF49E4A1D4DF2A000E8612A /* CTStarRatingView.m in Sources */,
 				6DF49E371D4DEF6D00E8612A /* AppDelegate.m in Sources */,
+				6DF49E4E1D4DF34D00E8612A /* ViewController.m in Sources */,
 				6DF49E341D4DEF6D00E8612A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

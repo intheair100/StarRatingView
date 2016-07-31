@@ -12,6 +12,9 @@
 
 #import "CTStarRatingView.h"
 
+#define CTColorHex(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 green:((c>>8)&0xFF)/255.0 blue:((c)&0xFF)/255.0 alpha:1.0]
+
+
 @interface CTStarRatingView ()
 
 @property (nonatomic, strong) UIView *starBackgroundView;
@@ -131,7 +134,7 @@
     if (p.x > self.frame.size.width) {
         p.x = self.frame.size.width;
     }
-    NSString* str = [NSString stringWithFormat:@"%0.2f",p.x/self.size.width];
+    NSString* str = [NSString stringWithFormat:@"%0.2f",p.x/self.frame.size.width];
     float score = [str floatValue];
     p.x = score* self.frame.size.width;
     
@@ -229,19 +232,19 @@
             return;
             break;
         case 1:
-            centerX = iv1.centerX;
+            centerX = iv1.center.x;
             break;
         case 2:
-            centerX = iv2.centerX;
+            centerX = iv1.center.x;
             break;
         case 3:
-            centerX = iv3.centerX;
+            centerX = iv1.center.x;
             break;
         case 4:
-            centerX = iv4.centerX;
+            centerX = iv1.center.x;
             break;
         case 5:
-            centerX = iv5.centerX;
+            centerX = iv1.center.x;
             break;
         default:
             break;
