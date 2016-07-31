@@ -7,15 +7,16 @@
 //
 
 #import "ViewController.h"
-
+#import "CTStarRatingView.h"
 @interface ViewController ()
-
+@property(nonatomic,strong)CTStarRatingView* starRatingView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.view addSubview:self.starRatingView];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -24,6 +25,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(CTStarRatingView*)starRatingView
+{
+    if (!_starRatingView) {
+        _starRatingView = [[CTStarRatingView alloc]initWithFrame:CGRectMake(100,300, 98, 18) starNum:5];
+    }
+    return _starRatingView;
+}
 /*
 #pragma mark - Navigation
 
