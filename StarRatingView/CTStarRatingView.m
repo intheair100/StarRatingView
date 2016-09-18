@@ -101,23 +101,24 @@
     return view;
 }
 
-//- (void)setScore:(float)score withTotalScore:(float)totalScore
-//{
-//    NSAssert((score >= 0.0)&&(score <= 1.0 * totalScore), @"score must be between 0 and 1");
-//    NSAssert(totalScore > 0.0, @"totalScore must be Greater than 0");
-//    
-//    if (score < 0)
-//    {
-//        score = 0;
-//    }
-//    if (score > totalScore)
-//    {
-//        score = totalScore;
-//    }
-//
-//    CGPoint point = CGPointMake((score/totalScore) * self.frame.size.width, 0);
-//    [self changeStarForegroundViewWithPoint:point];
-//}
+//增加设置评论分数，根据从服务器获取到的分数进行展示有几个蓝色的圆点。
+- (void)setScore:(float)score withTotalScore:(float)totalScore
+{
+    NSAssert((score >= 0.0)&&(score <= 1.0 * totalScore), @"score must be between 0 and 1");
+    NSAssert(totalScore > 0.0, @"totalScore must be Greater than 0");
+    
+    if (score < 0)
+    {
+        score = 0;
+    }
+    if (score > totalScore)
+    {
+        score = totalScore;
+    }
+
+    CGPoint point = CGPointMake((score/totalScore) * self.frame.size.width, 0);
+    [self changeStarForegroundViewWithPoint:point];
+}
 
 /**
  *  通过坐标改变前景视图
