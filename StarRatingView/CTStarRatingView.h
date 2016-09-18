@@ -10,8 +10,9 @@
 
 @interface CTStarRatingView : UIView
 
-@property(nonatomic, readonly)int starNum;
-@property(nonatomic, assign)int score;
+@property(nonatomic, readonly)int starNum; //圆点个数
+@property(nonatomic, assign)int score; //分数
+@property(nonatomic, assign)BOOL isShowAnimation;
 
 
 -(id)initWithFrame:(CGRect)frame starNum:(int)starNum;

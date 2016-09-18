@@ -202,8 +202,10 @@
     [UIView animateWithDuration:0.2 animations:^{
         [weakSelf changeStarForegroundViewWithPoint:point];
     }];
-//    [self scoreAnimation];
-    
+
+    if (_isShowAnimation) {
+        [self scoreAnimation];
+    }
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -218,7 +220,7 @@
 
 -(void)scoreAnimation
 {
-//    self.userInteractionEnabled = NO;
+    self.userInteractionEnabled = NO;
     if (!animateLabel) {
         animateLabel = [UILabel new];
         animateLabel.bounds = CGRectMake(0, 0, 50, 20);
@@ -236,16 +238,16 @@
             centerX = iv1.center.x;
             break;
         case 2:
-            centerX = iv1.center.x;
+            centerX = iv2.center.x;
             break;
         case 3:
-            centerX = iv1.center.x;
+            centerX = iv3.center.x;
             break;
         case 4:
-            centerX = iv1.center.x;
+            centerX = iv4.center.x;
             break;
         case 5:
-            centerX = iv1.center.x;
+            centerX = iv5.center.x;
             break;
         default:
             break;
@@ -256,7 +258,7 @@
         animateLabel.center = CGPointMake(centerX, -20);
         animateLabel.alpha = 0;
     } completion:^(BOOL finished) {
-//        self.userInteractionEnabled = YES;
+        self.userInteractionEnabled = YES;
     }];
 
 }
