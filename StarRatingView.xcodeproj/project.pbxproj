@@ -11,9 +11,11 @@
 		6DF49E371D4DEF6D00E8612A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E361D4DEF6D00E8612A /* AppDelegate.m */; };
 		6DF49E391D4DEF6D00E8612A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E381D4DEF6D00E8612A /* Assets.xcassets */; };
 		6DF49E3C1D4DEF6D00E8612A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E3A1D4DEF6D00E8612A /* LaunchScreen.storyboard */; };
-		6DF49E4A1D4DF2A000E8612A /* CTStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E491D4DF2A000E8612A /* CTStarRatingView.m */; settings = {ASSET_TAGS = (); }; };
-		6DF49E4E1D4DF34D00E8612A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E4C1D4DF34C00E8612A /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6DF49E4F1D4DF34D00E8612A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E4D1D4DF34D00E8612A /* ViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		6DF49E4A1D4DF2A000E8612A /* CTStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E491D4DF2A000E8612A /* CTStarRatingView.m */; };
+		6DF49E4E1D4DF34D00E8612A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF49E4C1D4DF34C00E8612A /* ViewController.m */; };
+		6DF49E4F1D4DF34D00E8612A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF49E4D1D4DF34D00E8612A /* ViewController.xib */; };
+		F82470371D8E78CB00DEAF75 /* grade-blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F82470361D8E78CB00DEAF75 /* grade-blue@2x.png */; };
+		F82470391D8E78D600DEAF75 /* grade-gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F82470381D8E78D600DEAF75 /* grade-gray@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		6DF49E4B1D4DF34C00E8612A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6DF49E4C1D4DF34C00E8612A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6DF49E4D1D4DF34D00E8612A /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		F82470361D8E78CB00DEAF75 /* grade-blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grade-blue@2x.png"; sourceTree = "<group>"; };
+		F82470381D8E78D600DEAF75 /* grade-gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grade-gray@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				6DF49E4B1D4DF34C00E8612A /* ViewController.h */,
 				6DF49E4C1D4DF34C00E8612A /* ViewController.m */,
 				6DF49E4D1D4DF34D00E8612A /* ViewController.xib */,
+				F82470361D8E78CB00DEAF75 /* grade-blue@2x.png */,
+				F82470381D8E78D600DEAF75 /* grade-gray@2x.png */,
 				6DF49E381D4DEF6D00E8612A /* Assets.xcassets */,
 				6DF49E3A1D4DEF6D00E8612A /* LaunchScreen.storyboard */,
 				6DF49E3D1D4DEF6D00E8612A /* Info.plist */,
@@ -141,8 +147,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82470391D8E78D600DEAF75 /* grade-gray@2x.png in Resources */,
 				6DF49E391D4DEF6D00E8612A /* Assets.xcassets in Resources */,
 				6DF49E4F1D4DF34D00E8612A /* ViewController.xib in Resources */,
+				F82470371D8E78CB00DEAF75 /* grade-blue@2x.png in Resources */,
 				6DF49E3C1D4DEF6D00E8612A /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +304,7 @@
 				6DF49E421D4DEF6D00E8612A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
