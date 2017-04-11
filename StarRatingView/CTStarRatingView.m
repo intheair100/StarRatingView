@@ -32,10 +32,6 @@
     UIImageView* iv5;
 
 }
-- (id)initWithFrame:(CGRect)frame
-{
-    return [self initWithFrame:frame starNum:_starNum];
-}
 
 - (void)awakeFromNib
 {
@@ -51,11 +47,12 @@
  *
  *  @return TQStarRatingViewObject
  */
-- (id)initWithFrame:(CGRect)frame starNum:(int)starNum
+- (id)initWithFrame:(CGRect)frame starNum:(int)starNum isShowAnimation:(BOOL)isShowAnimation
 {
     self = [super initWithFrame:frame];
     if (self) {
         _starNum = starNum;
+        _isShowAnimation = isShowAnimation;
         [self setUpUI];
     }
     return self;

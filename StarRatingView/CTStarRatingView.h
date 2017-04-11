@@ -12,10 +12,11 @@
 
 @property(nonatomic, readonly)int starNum; //圆点个数
 @property(nonatomic, assign)int score; //分数
-@property(nonatomic, assign)BOOL isShowAnimation;
+@property(nonatomic, assign)BOOL isShowAnimation; //是否有点击动画
 
 
--(id)initWithFrame:(CGRect)frame starNum:(int)starNum;
+
+- (id)initWithFrame:(CGRect)frame starNum:(int)starNum isShowAnimation:(BOOL)isShowAnimation;
 
 - (void)setScore:(float)score withTotalScore:(float)totalScore;
 
