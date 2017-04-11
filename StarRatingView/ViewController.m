@@ -28,7 +28,7 @@
 -(CTStarRatingView*)starRatingView
 {
     if (!_starRatingView) {
-        _starRatingView = [[CTStarRatingView alloc]initWithFrame:CGRectMake(100,300, 98, 18) starNum:5];
+        _starRatingView = [[CTStarRatingView alloc]initWithFrame:CGRectMake(100,300, 98, 18) starNum:6];
     }
     return _starRatingView;
 }

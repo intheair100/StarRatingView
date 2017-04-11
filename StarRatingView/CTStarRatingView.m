@@ -8,7 +8,6 @@
 
 #define kBACKGROUND_STAR @"grade-blue"
 #define kFOREGROUND_STAR @"grade-gray"
-#define kNUMBER_OF_STAR  5
 
 #import "CTStarRatingView.h"
 
@@ -35,14 +34,12 @@
 }
 - (id)initWithFrame:(CGRect)frame
 {
-    return [self initWithFrame:frame starNum:kNUMBER_OF_STAR];
+    return [self initWithFrame:frame starNum:_starNum];
 }
 
 - (void)awakeFromNib
 {
     [super awakeFromNib];
-    
-    _starNum = kNUMBER_OF_STAR;
     [self setUpUI];
 }
 
